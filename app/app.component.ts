@@ -12,6 +12,12 @@ export class AppComponent {
     title = 'Customer App';
     name = 'angular 2 app';
     currentColour = 'blue';
+    customers = [
+        {id:1,name:'bob'},
+        {id:2,name:'james'},
+        {id:3,name:'adam'},
+        {id:4,name:'ray'},
+    ];
 
     changeColour(){
         this.currentColour = 'red';

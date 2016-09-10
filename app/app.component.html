@@ -2,8 +2,18 @@
 <div [style.color]="currentColour">
     Hello {{name}}
 </div>
-<input type="text" [value]="name" (keyup.enter)="name = $event.target.value" >
+<input type="text" [value]="name" (keyup.enter)="name = $event.target.value">
 
-<input type="text" [(ngModel)]="name" >
+<input type="text" [(ngModel)]="name">
 
 <button (click)="changeColour()">Change suit colour</button>
+
+<br/>
+
+<!--ul>li*3-->
+
+<ul>
+    <li *ngFor="let customer of customers">
+        {{customer.name}}
+    </li>
+</ul>
