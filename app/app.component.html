@@ -13,7 +13,7 @@
 <!--ul>li*3-->
 
 <ul>
-    <li *ngFor="let customer of customers">
-        {{customer.name}}
+    <li *ngFor="let c of customers">
+        <my-customer [customer]="c"></my-customer>
     </li>
 </ul>

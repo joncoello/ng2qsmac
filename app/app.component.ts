@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 
+import { CustomerComponent } from './customer/customer.component';
+
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/app.component.html'
+    templateUrl: 'app/app.component.html',
+    directives: [CustomerComponent]
 })
 export class AppComponent { 
 
